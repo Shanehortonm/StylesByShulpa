@@ -1,83 +1,19 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-
-}
-
-
-
-/*
-===============================================================================
-Start of Nav
-===============================================================================
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-* { margin: 0; padding: 0;}
-body { margin: 0; padding: 0; background: #232323; color: #cdcdcd; font-family: 'Roboto', sans-serif;}
-a { text-decoration: none; color: #232323; transition: color 0.3s ease;}
-a:hover, a:active, a.active { color: #ed8300;}
-nav { float: left; width: 0; height: 0;}
-.nav-data { position: absolute; width: 240px; margin: -100px 0 0 -50px; padding: 125px 10px 40px; background: #ededed; list-style-type: none;}
-.nav-data li { padding: 10px 25px; font-size: 16px;}
-.nav-data li a { padding: 0;} /* padding: 25px 50px */
-.nav-data .separator { padding: 0; border-bottom: 3px solid #e6e7ea; cursor: default; margin: 6px 0;}
-#clickNav { display: block; position: relative; top: 50px; left: 50px; z-index: 1;}
-#clickNav input { display: block; width: 40px; height: 32px; position: absolute; top: -7px; left: -5px; cursor: pointer; opacity: 0; z-index: 9999; -webkit-touch-callout: none;}
-#clickNav input:checked ~ ul { -webkit-transform: none; transform: none;}
-
-#clickNav span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #f89c2b; border-radius: 3px; z-index: 1;}
-#clickNav span {
--webkit-transform-origin: 4px 0px;
-transform-origin: 4px 0px;
-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
-opacity 0.55s ease,
--webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-opacity 0.55s ease;
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-opacity 0.55s ease,
--webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#clickNav span:first-child { 
-	-webkit-transform-origin: 0% 0%; 
-	transform-origin: 0% 0%;
-}
-#clickNav span:nth-last-child(2) { 
-	-webkit-transform-origin: 0% 100%; 
-	transform-origin: 0% 100%;
-}
-
-#clickNav input:checked ~ span { 
-	opacity: 1; 
-	-webkit-transform: rotate(45deg) translate(-2px, -1px); 
-	transform: rotate(45deg) translate(-2px, -1px); 
+	margin: 0;
+	padding: 0;
 	background: #232323;
+	font-family: "Roboto", sans-serif;
 }
-
-#clickNav input:checked ~ span:nth-last-child(3) {
-	opacity: 0;
-	-webkit-transform: rotate(0deg) scale(0.2, 0.2);
-	transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#clickNav input:checked ~ span:nth-last-child(2) {
-	-webkit-transform: rotate(-45deg) translate(0, -1px);
-	transform: rotate(-45deg) translate(0, -1px);
-}
-
-.nav-data {
-	-webkit-transform-origin: 0% 0%;
-	transform-origin: 0% 0%;
-	-webkit-transform: translate(-100%, 0);
-	transform: translate(-100%, 0);
-	transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
 
 /*
 ===============================================================================
@@ -85,15 +21,15 @@ Start of Hero
 ===============================================================================
 */
 
-
-
 /*
 ===============================================================================
 Start of Bio
 ===============================================================================
 */
 
-
+.bio-container {
+	height: 170vh;
+}
 
 /*
 ===============================================================================
@@ -101,16 +37,11 @@ Start of Photo
 ===============================================================================
 */
 
-
-
-
 /*
 ===============================================================================
 Start of Testimonials 
 ===============================================================================
 */
-
-
 
 /*
 ===============================================================================
@@ -118,257 +49,270 @@ Start of Footer
 ===============================================================================
 */
 
-
-
-body p {
-    color: aliceblue;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
 /* Start of Stars */
 
 .night {
-    transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
 }
 
-.shooting-star {
-    position: absolute;
-    height: 2px;
-    background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
-    border-radius: 999px;
-    filter: drop-shadow(0 0 6px #699bff);
-    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
-}
+/* .shooting-star {
+	position: absolute;
+	height: 2px;
+	background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+	border-radius: 999px;
+	filter: drop-shadow(0 0 6px #699bff);
+	animation: tail 3000ms ease-in-out infinite,
+		shooting 3000ms ease-in-out infinite;
+} */
 .shooting-star::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 0;
-    height: 3px;
-    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
-    transform: translateX(50%) rotateZ(45deg);
-    border-radius: 100%;
-    animation: shining 3000ms ease-in-out infinite;
+	content: "";
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 0;
+	height: 3px;
+	background: linear-gradient(
+		-45deg,
+		rgba(0, 0, 255, 0),
+		#5f91ff,
+		rgba(0, 0, 255, 0)
+	);
+	transform: translateX(50%) rotateZ(45deg);
+	border-radius: 100%;
+	animation: shining 3000ms ease-in-out infinite;
 }
 .shooting-star::after {
-    content: "";
-    position: absolute;
-    top: calc(100% - 1px);
-    right: 0;
-    height: 2px;
-    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
-    transform: translateX(50%) rotateZ(45deg);
-    border-radius: 100%;
-    animation: shining 3000ms ease-in-out infinite;
-    transform: translateX(50%) rotateZ(-45deg);
+	content: "";
+	position: absolute;
+	top: calc(100% - 1px);
+	right: 0;
+	height: 2px;
+	background: linear-gradient(
+		-45deg,
+		rgba(0, 0, 255, 0),
+		#5f91ff,
+		rgba(0, 0, 255, 0)
+	);
+	transform: translateX(50%) rotateZ(45deg);
+	border-radius: 100%;
+	animation: shining 3000ms ease-in-out infinite;
+	transform: translateX(50%) rotateZ(-45deg);
 }
 .shooting-star:nth-child(1) {
-    top: calc(80% - -136px);
-    left: calc(80% - 122px);
-    animation-delay: 656ms;
+	top: calc(80% - -136px);
+	left: calc(80% - 122px);
+	animation-delay: 656ms;
 }
-.shooting-star:nth-child(1)::before, .shooting-star:nth-child(1)::after {
-    animation-delay: 656ms;
+.shooting-star:nth-child(1)::before,
+.shooting-star:nth-child(1)::after {
+	animation-delay: 656ms;
 }
 .shooting-star:nth-child(2) {
-    top: calc(50% - -138px);
-    left: calc(50% - 294px);
-    animation-delay: 1413ms;
+	top: calc(50% - -138px);
+	left: calc(50% - 294px);
+	animation-delay: 1413ms;
 }
-.shooting-star:nth-child(2)::before, .shooting-star:nth-child(2)::after {
-    animation-delay: 1413ms;
+.shooting-star:nth-child(2)::before,
+.shooting-star:nth-child(2)::after {
+	animation-delay: 1413ms;
 }
 .shooting-star:nth-child(3) {
-    top: calc(50% - -191px);
-    left: calc(50% - 293px);
-    animation-delay: 2010ms;
+	top: calc(50% - -191px);
+	left: calc(50% - 293px);
+	animation-delay: 2010ms;
 }
-.shooting-star:nth-child(3)::before, .shooting-star:nth-child(3)::after {
-    animation-delay: 2010ms;
+.shooting-star:nth-child(3)::before,
+.shooting-star:nth-child(3)::after {
+	animation-delay: 2010ms;
 }
 .shooting-star:nth-child(4) {
-    top: calc(50% - 111px);
-    left: calc(50% - 42px);
-    animation-delay: 7644ms;
+	top: calc(50% - 111px);
+	left: calc(50% - 42px);
+	animation-delay: 7644ms;
 }
-.shooting-star:nth-child(4)::before, .shooting-star:nth-child(4)::after {
-    animation-delay: 7644ms;
+.shooting-star:nth-child(4)::before,
+.shooting-star:nth-child(4)::after {
+	animation-delay: 7644ms;
 }
 .shooting-star:nth-child(5) {
-    top: calc(50% - 181px);
-    left: calc(50% - 178px);
-    animation-delay: 837ms;
+	top: calc(50% - 181px);
+	left: calc(50% - 178px);
+	animation-delay: 837ms;
 }
-.shooting-star:nth-child(5)::before, .shooting-star:nth-child(5)::after {
-    animation-delay: 837ms;
+.shooting-star:nth-child(5)::before,
+.shooting-star:nth-child(5)::after {
+	animation-delay: 837ms;
 }
 .shooting-star:nth-child(6) {
-    top: calc(50% - 135px);
-    left: calc(50% - 228px);
-    animation-delay: 2700ms;
+	top: calc(50% - 135px);
+	left: calc(50% - 228px);
+	animation-delay: 2700ms;
 }
-.shooting-star:nth-child(6)::before, .shooting-star:nth-child(6)::after {
-    animation-delay: 2700ms;
+.shooting-star:nth-child(6)::before,
+.shooting-star:nth-child(6)::after {
+	animation-delay: 2700ms;
 }
 .shooting-star:nth-child(7) {
-    top: calc(50% - -169px);
-    left: calc(50% - 152px);
-    animation-delay: 2174ms;
+	top: calc(50% - -169px);
+	left: calc(50% - 152px);
+	animation-delay: 2174ms;
 }
-.shooting-star:nth-child(7)::before, .shooting-star:nth-child(7)::after {
-    animation-delay: 2174ms;
+.shooting-star:nth-child(7)::before,
+.shooting-star:nth-child(7)::after {
+	animation-delay: 2174ms;
 }
 .shooting-star:nth-child(8) {
-    top: calc(50% - 170px);
-    left: calc(50% - 211px);
-    animation-delay: 4122ms;
+	top: calc(50% - 170px);
+	left: calc(50% - 211px);
+	animation-delay: 4122ms;
 }
-.shooting-star:nth-child(8)::before, .shooting-star:nth-child(8)::after {
-    animation-delay: 4122ms;
+.shooting-star:nth-child(8)::before,
+.shooting-star:nth-child(8)::after {
+	animation-delay: 4122ms;
 }
 .shooting-star:nth-child(9) {
-    top: calc(50% - -152px);
-    left: calc(50% - 185px);
-    animation-delay: 7182ms;
+	top: calc(50% - -152px);
+	left: calc(50% - 185px);
+	animation-delay: 7182ms;
 }
-.shooting-star:nth-child(9)::before, .shooting-star:nth-child(9)::after {
-    animation-delay: 7182ms;
+.shooting-star:nth-child(9)::before,
+.shooting-star:nth-child(9)::after {
+	animation-delay: 7182ms;
 }
 .shooting-star:nth-child(10) {
-    top: calc(50% - -29px);
-    left: calc(50% - 82px);
-    animation-delay: 9203ms;
+	top: calc(50% - -29px);
+	left: calc(50% - 82px);
+	animation-delay: 9203ms;
 }
-.shooting-star:nth-child(10)::before, .shooting-star:nth-child(10)::after {
-    animation-delay: 9203ms;
+.shooting-star:nth-child(10)::before,
+.shooting-star:nth-child(10)::after {
+	animation-delay: 9203ms;
 }
 .shooting-star:nth-child(11) {
-    top: calc(50% - -169px);
-    left: calc(50% - 186px);
-    animation-delay: 5647ms;
+	top: calc(50% - -169px);
+	left: calc(50% - 186px);
+	animation-delay: 5647ms;
 }
-.shooting-star:nth-child(11)::before, .shooting-star:nth-child(11)::after {
-    animation-delay: 5647ms;
+.shooting-star:nth-child(11)::before,
+.shooting-star:nth-child(11)::after {
+	animation-delay: 5647ms;
 }
 .shooting-star:nth-child(12) {
-    top: calc(50% - 88px);
-    left: calc(50% - 239px);
-    animation-delay: 578ms;
+	top: calc(50% - 88px);
+	left: calc(50% - 239px);
+	animation-delay: 578ms;
 }
-.shooting-star:nth-child(12)::before, .shooting-star:nth-child(12)::after {
-    animation-delay: 578ms;
+.shooting-star:nth-child(12)::before,
+.shooting-star:nth-child(12)::after {
+	animation-delay: 578ms;
 }
 .shooting-star:nth-child(13) {
-    top: calc(50% - 36px);
-    left: calc(50% - 108px);
-    animation-delay: 7209ms;
+	top: calc(50% - 36px);
+	left: calc(50% - 108px);
+	animation-delay: 7209ms;
 }
-.shooting-star:nth-child(13)::before, .shooting-star:nth-child(13)::after {
-    animation-delay: 7209ms;
+.shooting-star:nth-child(13)::before,
+.shooting-star:nth-child(13)::after {
+	animation-delay: 7209ms;
 }
 .shooting-star:nth-child(14) {
-    top: calc(50% - 154px);
-    left: calc(50% - 13px);
-    animation-delay: 5235ms;
+	top: calc(50% - 154px);
+	left: calc(50% - 13px);
+	animation-delay: 5235ms;
 }
-.shooting-star:nth-child(14)::before, .shooting-star:nth-child(14)::after {
-    animation-delay: 5235ms;
+.shooting-star:nth-child(14)::before,
+.shooting-star:nth-child(14)::after {
+	animation-delay: 5235ms;
 }
 .shooting-star:nth-child(15) {
-    top: calc(50% - 67px);
-    left: calc(50% - 45px);
-    animation-delay: 1556ms;
+	top: calc(50% - 67px);
+	left: calc(50% - 45px);
+	animation-delay: 1556ms;
 }
-.shooting-star:nth-child(15)::before, .shooting-star:nth-child(15)::after {
-    animation-delay: 1556ms;
+.shooting-star:nth-child(15)::before,
+.shooting-star:nth-child(15)::after {
+	animation-delay: 1556ms;
 }
 .shooting-star:nth-child(16) {
-    top: calc(50% - -112px);
-    left: calc(50% - 275px);
-    animation-delay: 640ms;
+	top: calc(50% - -112px);
+	left: calc(50% - 275px);
+	animation-delay: 640ms;
 }
-.shooting-star:nth-child(16)::before, .shooting-star:nth-child(16)::after {
-    animation-delay: 640ms;
+.shooting-star:nth-child(16)::before,
+.shooting-star:nth-child(16)::after {
+	animation-delay: 640ms;
 }
 .shooting-star:nth-child(17) {
-    top: calc(50% - -51px);
-    left: calc(50% - 62px);
-    animation-delay: 237ms;
+	top: calc(50% - -51px);
+	left: calc(50% - 62px);
+	animation-delay: 237ms;
 }
-.shooting-star:nth-child(17)::before, .shooting-star:nth-child(17)::after {
-    animation-delay: 237ms;
+.shooting-star:nth-child(17)::before,
+.shooting-star:nth-child(17)::after {
+	animation-delay: 237ms;
 }
 .shooting-star:nth-child(18) {
-    top: calc(50% - 193px);
-    left: calc(50% - 176px);
-    animation-delay: 7209ms;
+	top: calc(50% - 193px);
+	left: calc(50% - 176px);
+	animation-delay: 7209ms;
 }
-.shooting-star:nth-child(18)::before, .shooting-star:nth-child(18)::after {
-    animation-delay: 7209ms;
+.shooting-star:nth-child(18)::before,
+.shooting-star:nth-child(18)::after {
+	animation-delay: 7209ms;
 }
 .shooting-star:nth-child(19) {
-    top: calc(50% - 107px);
-    left: calc(50% - 4px);
-    animation-delay: 6863ms;
+	top: calc(50% - 107px);
+	left: calc(50% - 4px);
+	animation-delay: 6863ms;
 }
-.shooting-star:nth-child(19)::before, .shooting-star:nth-child(19)::after {
-    animation-delay: 6863ms;
+.shooting-star:nth-child(19)::before,
+.shooting-star:nth-child(19)::after {
+	animation-delay: 6863ms;
 }
 .shooting-star:nth-child(20) {
-    top: calc(50% - 161px);
-    left: calc(50% - 216px);
-    animation-delay: 95ms;
+	top: calc(50% - 161px);
+	left: calc(50% - 216px);
+	animation-delay: 95ms;
 }
-.shooting-star:nth-child(20)::before, .shooting-star:nth-child(20)::after {
-    animation-delay: 95ms;
+.shooting-star:nth-child(20)::before,
+.shooting-star:nth-child(20)::after {
+	animation-delay: 95ms;
 }
 
 @keyframes tail {
-    0% {
-        width: 0;
-    }
-    30% {
-        width: 100px;
-    }
-    100% {
-        width: 0;
-    }
+	0% {
+		width: 0;
+	}
+	30% {
+		width: 100px;
+	}
+	100% {
+		width: 0;
+	}
 }
 @keyframes shining {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 30px;
-    }
-    100% {
-        width: 0;
-    }
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 30px;
+	}
+	100% {
+		width: 0;
+	}
 }
 @keyframes shooting {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(300px);
-    }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(300px);
+	}
 }
 @keyframes sky {
-    0% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(405deg);
-    }
+	0% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(405deg);
+	}
 }
