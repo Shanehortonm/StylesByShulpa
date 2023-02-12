@@ -26,7 +26,7 @@ Start of Hero
 Start of Bio
 ===============================================================================
 */
-git
+
 .bio-container {
 	height: 170vh;
 }
@@ -34,9 +34,8 @@ git
 /* Start of Stars */
 
 .night {
-	margin-top: 350px;
-	transform: rotateZ(45deg);
-	width: 1%;
+	display: none;
+	transform: rotate(45deg);
 }
 
 .shooting-star {
@@ -361,3 +360,21 @@ Start of Testimonials
 Start of Footer
 ===============================================================================
 */
+
+/*
+===============================================================================
+Start of MQ
+===============================================================================
+*/
+
+@media screen and (min-width: 650px) {
+	.night {
+		display: contents;
+	}
+}
+@media screen and (min-width: 769px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1400px) {
+}

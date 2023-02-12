@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-list li {
-	padding: 10px 25px;
+	padding: 10px 15px 0 25px;
 	font-size: 16px;
 }
 
@@ -67,11 +67,11 @@ nav {
 
 .nav-list .separator {
 	max-width: 50%;
-	min-width: 150px;
+	min-width: 120px;
 	padding: 0;
 	border-bottom: 3px solid #e6e7ea;
 	cursor: default;
-	margin: 6px 10px;
+	margin: 15px 10px 0 10px;
 }
 
 #clickNav {
