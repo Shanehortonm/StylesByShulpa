@@ -38,7 +38,7 @@ Start of Bio
 	transform: rotateZ(45deg);
 }
 
-/* .shooting-star {
+.shooting-star {
 	position: absolute;
 	height: 2px;
 	background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
@@ -46,7 +46,7 @@ Start of Bio
 	filter: drop-shadow(0 0 5px #699bff);
 	animation: tail 3000ms ease-in-out infinite,
 		shooting 3000ms ease-in-out infinite;
-} */
+}
 
 .shooting-star::before {
 	content: "";
