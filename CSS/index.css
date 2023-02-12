@@ -31,28 +31,11 @@ Start of Bio
 	height: 170vh;
 }
 
-/*
-===============================================================================
-Start of Photo
-===============================================================================
-*/
-
-/*
-===============================================================================
-Start of Testimonials 
-===============================================================================
-*/
-
-/*
-===============================================================================
-Start of Footer
-===============================================================================
-*/
-
 /* Start of Stars */
 
 .night {
-	transform: rotateZ(90deg);
+	margin-top: 350px;
+	transform: rotateZ(45deg);
 }
 
 /* .shooting-star {
@@ -60,10 +43,11 @@ Start of Footer
 	height: 2px;
 	background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
 	border-radius: 999px;
-	filter: drop-shadow(0 0 6px #699bff);
+	filter: drop-shadow(0 0 5px #699bff);
 	animation: tail 3000ms ease-in-out infinite,
 		shooting 3000ms ease-in-out infinite;
 } */
+
 .shooting-star::before {
 	content: "";
 	position: absolute;
@@ -80,6 +64,7 @@ Start of Footer
 	border-radius: 100%;
 	animation: shining 3000ms ease-in-out infinite;
 }
+
 .shooting-star::after {
 	content: "";
 	position: absolute;
@@ -97,29 +82,35 @@ Start of Footer
 	animation: shining 3000ms ease-in-out infinite;
 	transform: translateX(50%) rotateZ(-45deg);
 }
+
 .shooting-star:nth-child(1) {
 	top: calc(80% - -136px);
 	left: calc(80% - 122px);
 	animation-delay: 656ms;
 }
+
 .shooting-star:nth-child(1)::before,
 .shooting-star:nth-child(1)::after {
 	animation-delay: 656ms;
 }
+
 .shooting-star:nth-child(2) {
 	top: calc(50% - -138px);
 	left: calc(50% - 294px);
 	animation-delay: 1413ms;
 }
+
 .shooting-star:nth-child(2)::before,
 .shooting-star:nth-child(2)::after {
 	animation-delay: 1413ms;
 }
+
 .shooting-star:nth-child(3) {
 	top: calc(50% - -191px);
 	left: calc(50% - 293px);
 	animation-delay: 2010ms;
 }
+
 .shooting-star:nth-child(3)::before,
 .shooting-star:nth-child(3)::after {
 	animation-delay: 2010ms;
@@ -129,145 +120,177 @@ Start of Footer
 	left: calc(50% - 42px);
 	animation-delay: 7644ms;
 }
+
 .shooting-star:nth-child(4)::before,
 .shooting-star:nth-child(4)::after {
 	animation-delay: 7644ms;
 }
+
 .shooting-star:nth-child(5) {
 	top: calc(50% - 181px);
 	left: calc(50% - 178px);
 	animation-delay: 837ms;
 }
+
 .shooting-star:nth-child(5)::before,
 .shooting-star:nth-child(5)::after {
 	animation-delay: 837ms;
 }
+
 .shooting-star:nth-child(6) {
 	top: calc(50% - 135px);
 	left: calc(50% - 228px);
 	animation-delay: 2700ms;
 }
+
 .shooting-star:nth-child(6)::before,
 .shooting-star:nth-child(6)::after {
 	animation-delay: 2700ms;
 }
+
 .shooting-star:nth-child(7) {
 	top: calc(50% - -169px);
 	left: calc(50% - 152px);
 	animation-delay: 2174ms;
 }
+
 .shooting-star:nth-child(7)::before,
 .shooting-star:nth-child(7)::after {
 	animation-delay: 2174ms;
 }
+
 .shooting-star:nth-child(8) {
 	top: calc(50% - 170px);
 	left: calc(50% - 211px);
 	animation-delay: 4122ms;
 }
+
 .shooting-star:nth-child(8)::before,
 .shooting-star:nth-child(8)::after {
 	animation-delay: 4122ms;
 }
+
 .shooting-star:nth-child(9) {
 	top: calc(50% - -152px);
 	left: calc(50% - 185px);
 	animation-delay: 7182ms;
 }
+
 .shooting-star:nth-child(9)::before,
 .shooting-star:nth-child(9)::after {
 	animation-delay: 7182ms;
 }
+
 .shooting-star:nth-child(10) {
 	top: calc(50% - -29px);
 	left: calc(50% - 82px);
 	animation-delay: 9203ms;
 }
+
 .shooting-star:nth-child(10)::before,
 .shooting-star:nth-child(10)::after {
 	animation-delay: 9203ms;
 }
+
 .shooting-star:nth-child(11) {
 	top: calc(50% - -169px);
 	left: calc(50% - 186px);
 	animation-delay: 5647ms;
 }
+
 .shooting-star:nth-child(11)::before,
 .shooting-star:nth-child(11)::after {
 	animation-delay: 5647ms;
 }
+
 .shooting-star:nth-child(12) {
 	top: calc(50% - 88px);
 	left: calc(50% - 239px);
 	animation-delay: 578ms;
 }
+
 .shooting-star:nth-child(12)::before,
 .shooting-star:nth-child(12)::after {
 	animation-delay: 578ms;
 }
+
 .shooting-star:nth-child(13) {
 	top: calc(50% - 36px);
 	left: calc(50% - 108px);
 	animation-delay: 7209ms;
 }
+
 .shooting-star:nth-child(13)::before,
 .shooting-star:nth-child(13)::after {
 	animation-delay: 7209ms;
 }
+
 .shooting-star:nth-child(14) {
 	top: calc(50% - 154px);
 	left: calc(50% - 13px);
 	animation-delay: 5235ms;
 }
+
 .shooting-star:nth-child(14)::before,
 .shooting-star:nth-child(14)::after {
 	animation-delay: 5235ms;
 }
+
 .shooting-star:nth-child(15) {
 	top: calc(50% - 67px);
 	left: calc(50% - 45px);
 	animation-delay: 1556ms;
 }
+
 .shooting-star:nth-child(15)::before,
 .shooting-star:nth-child(15)::after {
 	animation-delay: 1556ms;
 }
+
 .shooting-star:nth-child(16) {
 	top: calc(50% - -112px);
 	left: calc(50% - 275px);
 	animation-delay: 640ms;
 }
+
 .shooting-star:nth-child(16)::before,
 .shooting-star:nth-child(16)::after {
 	animation-delay: 640ms;
 }
+
 .shooting-star:nth-child(17) {
 	top: calc(50% - -51px);
 	left: calc(50% - 62px);
 	animation-delay: 237ms;
 }
+
 .shooting-star:nth-child(17)::before,
 .shooting-star:nth-child(17)::after {
 	animation-delay: 237ms;
 }
+
 .shooting-star:nth-child(18) {
 	top: calc(50% - 193px);
 	left: calc(50% - 176px);
 	animation-delay: 7209ms;
 }
+
 .shooting-star:nth-child(18)::before,
 .shooting-star:nth-child(18)::after {
 	animation-delay: 7209ms;
 }
+
 .shooting-star:nth-child(19) {
 	top: calc(50% - 107px);
 	left: calc(50% - 4px);
 	animation-delay: 6863ms;
 }
+
 .shooting-star:nth-child(19)::before,
 .shooting-star:nth-child(19)::after {
 	animation-delay: 6863ms;
 }
+
 .shooting-star:nth-child(20) {
 	top: calc(50% - 161px);
 	left: calc(50% - 216px);
@@ -289,6 +312,7 @@ Start of Footer
 		width: 0;
 	}
 }
+
 @keyframes shining {
 	0% {
 		width: 0;
@@ -300,6 +324,7 @@ Start of Footer
 		width: 0;
 	}
 }
+
 @keyframes shooting {
 	0% {
 		transform: translateX(0);
@@ -308,6 +333,7 @@ Start of Footer
 		transform: translateX(300px);
 	}
 }
+
 @keyframes sky {
 	0% {
 		transform: rotate(45deg);
@@ -316,3 +342,21 @@ Start of Footer
 		transform: rotate(405deg);
 	}
 }
+
+/*
+===============================================================================
+Start of Photo
+===============================================================================
+*/
+
+/*
+===============================================================================
+Start of Testimonials 
+===============================================================================
+*/
+
+/*
+===============================================================================
+Start of Footer
+===============================================================================
+*/
